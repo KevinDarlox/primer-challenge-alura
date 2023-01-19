@@ -10,38 +10,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="encriptador.js"></script>
 </head>
 <body>
     <header>
-        <img src="imagenes/logo.png" alt="logo de alura">
+        <img id="logo" src="imagenes/logo.png" alt="logo de alura">
     </header>
 
     <main>
         <section>
-            <textarea class="text-area" cols="30" rows="10" placeholder="ingrese el texto aqui"></textarea>
+            <textarea class="text-area" id="textoencriptado" cols="30" rows="10" placeholder="ingrese el texto aqui"></textarea>
             <div>
                 <h6 class="informacion" >solo letras minusculas sin acentos</h6>
             </div>
 
             <div>
-                <button class="btn-encriptar">
-                    encriptar
+                <button id="btnencriptar" class="btn-encriptar" onclick=encriptador(),invisible()>
+                    Encriptar
                 </button>
 
-                <button class="btn-desencriptar">
-                    desencriptar
+                <button id="btndesencriptar" class="btn-desencriptar" onclick=desencriptador()>
+                    Desencriptar
                 </button>
             </div>
 
         </section>
 
-        <section>
-            <textarea class="mensaje" cols="20" rows="10"></textarea>
+        <section class="sec">
+            <textarea class="mensaje" id="textodesencriptado" cols="20" rows="10"></textarea>
+            <img id="busqueda" src="imagenes/Muñeco.png" alt="busqueda" >
+            <img id="no-texto" src="imagenes/Frame%205%20(1).png">
             <div>
-                <button class="copiar">copiar</button>
+                <button id="btncopiar" class="copiar"  onclick="copiar()">copiar</button>
             </div>
         </section>
 
     </main>
 </body>
+
 </html>

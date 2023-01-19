@@ -5,7 +5,7 @@
     font-size: 32px;
     line-height: 150%;
 }
-.logo{
+#logo{
     padding-top: 10px ;
     margin-left: 10px;
     width: 5%;
@@ -21,8 +21,10 @@ main{
 .text-area{
     border: none;
     color: #0A3871;
+    margin-left: 100px;
     margin-top: 98px;
     text-transform: lowercase;
+    height: 500px;
 }
 
 ::placeholder{color:#0A3871;}
@@ -32,20 +34,57 @@ main{
 
 .mensaje{
     background: white;
-    background-image: url("imagenes/muñeco.png");
-    background-repeat: no-repeat;
     border: none;
     border-radius: 24px;
     color: #0A3871 ;
-    margin-left: 98px;
+    margin-left: 500px;
     margin-top: 20px;
     padding-left: 20px;
-    position: fixed;
+    width: 500px;
+    height: 800px;
+    left: 2000px;
+    top: 40px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    word-wrap: break-word;
+
 }
+
+
 
 .mensaje:focus{
     outline:none;
 }
+
+#busqueda{
+    background: white;
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 1450px;
+    top: 153px;
+}
+
+
+
+#no-texto{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 1450px;
+    top: 519px;
+}
+
+
 
 .button{
     display: flex;
@@ -60,7 +99,12 @@ main{
     cursor: pointer;
     height: 67px;
     width: 328px;
+    margin-left: 10px;
 
+}
+
+.btn-encriptar:hover{
+    background-color: steelblue;
 }
 
 .btn-desencriptar{
@@ -70,8 +114,12 @@ main{
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 30px;
+    margin-left: 100px;
     width: 328px;
+}
+
+.btn-desencriptar:hover{
+    background-color: #E5E5E5;
 }
 
 .copiar{
@@ -80,14 +128,20 @@ main{
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
+    margin-left: 600px;
     position: absolute;
     width: 336px;
+    top: 75%;
+}
+
+.copiar:hover{
+    outline:none;
+    background-color: white;
 
 }
 
 .informacion{
     color: #495057;
     font-size: 18px;
+    margin-left: 40px;
 }
